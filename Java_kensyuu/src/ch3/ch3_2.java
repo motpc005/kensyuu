@@ -9,5 +9,4 @@ public class ch3_2 {
 			//this will infinitely loop the two messages
 		}
 	}
-
 }
