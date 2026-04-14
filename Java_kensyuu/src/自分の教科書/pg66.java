@@ -11,9 +11,9 @@ public class pg66 {
 		String name = "Alice";
 		
 		System.out.println("Name: " + name);
-		System.out.println("Age" + age);
-		System.out.println("Height" + height + "feet");
-		System.out.println("Is Adult:" + isAdult);
+		System.out.println("Age " + age);
+		System.out.println("Height " + height + " feet");
+		System.out.println("Is Adult: " + isAdult);
 		
 		age = 30;
 		System.out.println("Updated Age: " + age);
