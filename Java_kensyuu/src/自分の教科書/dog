@@ -1,0 +1,17 @@
+class Dog {
+	void bark() {
+		System.out.println("Woof!");
+		
+	}
+	
+	void sleep() {
+		System.out.println("Zzz...");
+		
+	}
+	
+	public static void main(String[] args) {
+		Dog myDog = new Dog();
+		myDog.bark();
+		myDog.sleep();
+	}
+}
