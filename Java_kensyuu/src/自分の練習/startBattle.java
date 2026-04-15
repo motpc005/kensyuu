@@ -2,8 +2,8 @@ package 自分の練習;
 
 import java.util.Random;
 
-public class battle {
-	public static void main(String[] args) {
+public class startBattle {
+	public static void startBattle() {
 
 		int playerHp = 21;
 		int enemyHp = 20;

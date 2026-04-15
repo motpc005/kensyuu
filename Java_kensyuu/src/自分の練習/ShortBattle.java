@@ -32,13 +32,15 @@ public class ShortBattle {
 
 			}
 			if (ans.equals("continue")) {
-				System.out.println("As you step forward, you black out.");
+				System.out.println("The battle starts and...");
 
-				battle.main(args);
+				startBattle.startBattle(); //battle.main(args);
+
+				break;
 
 			} else if (ans.equals("sneak out")) {
 				System.out.println("You are able to successfully sneak out , but");
-				System.out.println("live the your remaining days secluded in shame.");
+				System.out.println("live your remaining days secluded in shame.");
 				System.out.println("Game Over");
 				break;
 
