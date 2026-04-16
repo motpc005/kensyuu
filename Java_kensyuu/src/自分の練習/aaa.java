@@ -4,22 +4,25 @@ import java.util.Scanner;
 
 public class aaa {
 	public static void main(String[] args) {
+		while (true) {
+			Scanner scanner = new Scanner(System.in);
 
-		Scanner scanner = new Scanner(System.in);
+			System.out.println("Please, input your age.");
+			int age = scanner.nextInt();
 
-		System.out.println("Please, input your age.");
-		int age = scanner.nextInt();
+			if (age < 1 || age > 111) {
+				System.out.println("Really?");
 
-		if (age >= 18) {
-			System.out.println("adult");
+			} else if (age >= 18) {
+				System.out.println("Adult");
+				break;
 
-		} else if (age < 1 || age > 111) {
-			System.out.println("Really?");
+			} else {
+				System.out.println("Minor");
+				break;
+			}
 
-		} else {
-			System.out.println("minor");
 		}
-		scanner.close();
+		Scanner close;
 	}
-
 }
