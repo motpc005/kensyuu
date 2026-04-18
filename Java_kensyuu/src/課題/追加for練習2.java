@@ -121,18 +121,59 @@ public class 追加for練習2 {
 		for (int row = 1; row <= 5; row++) {
 
 			for (int col = 1; col <= row; col++) {
-				System.out.println(col);
+				System.out.print(col);
 			}
 			System.out.println();
+		}
 
-			for (int row2 = 5; row >= 1; row--) {
+		for (int row2 = 5; row2 >= 1; row2--) {
 
-				for (int col = 1; col <= row2; col++) {
-					System.out.print("*");
+			for (int col = 1; col <= row2; col++) {
+				System.out.print("*");
 
-				}
-				System.out.println();
 			}
+			System.out.println();
+		}
+
+		int sum4 = 0;
+
+		for (int i = 1; i <= 50; i++) {
+
+			if (i % 3 == 0 && i % 5 != 0) {
+				sum4 += i;
+			}
+		}
+		System.out.println(sum4);
+
+		int count5 = 0;
+
+		for (int i = 1; i <= 40; i++) {
+			if (i > 10 && i % 2 == 0) {
+				count5++;
+			}
+		}
+		System.out.println(count5);
+
+		int max = 0;
+
+		for (int i = 1; i <= 100; i++) {
+			if (i % 7 == 0) {
+				max = Math.max(max, i);
+			}
+		}
+		System.out.println(max);
+
+		for (int i = 1; i <= 20; i++) {
+			if (i % 4 != 0) {
+				System.out.println(i);
+			}
+		}
+
+		for (int row1 = 1; row1 <= 4; row1++) {
+			for (int col1 = 1; col1 <= 3; col1++) {
+				System.out.print(row1);
+			}
+			System.out.println();
 		}
 	}
 }
