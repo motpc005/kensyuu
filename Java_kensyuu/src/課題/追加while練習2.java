@@ -41,8 +41,7 @@ public class 追加while練習2 {
 
 		System.out.println("Imput a number");
 
-		Scanner scanner1 = new Scanner(System.in);
-		int n = scanner1.nextInt();
+		int n = scanner.nextInt();
 
 		while (n >= 1) {
 			System.out.println(n);
@@ -50,9 +49,8 @@ public class 追加while練習2 {
 		}
 
 		System.out.println("How many times do you want to say Hello?");
-		Scanner scanner2 = new Scanner(System.in);
 
-		int n1 = scanner2.nextInt();
+		int n1 = scanner.nextInt();
 
 		while (n1 >= 0) {
 			System.out.println("Hello");
@@ -79,8 +77,7 @@ public class 追加while練習2 {
 		}
 
 		System.out.println("Enter a number and I will only add the even numbers.");
-		Scanner scanner3 = new Scanner(System.in);
-		int n2 = scanner3.nextInt();
+		int n2 = scanner.nextInt();
 
 		int sum3 = 0;
 
@@ -105,14 +102,57 @@ public class 追加while練習2 {
 		System.out.println("The count is " + count);
 
 		System.out.println("Imput a number.");
-		Scanner scanner4 = new Scanner(System.in);
-		int h = scanner4.nextInt();
+		int h = scanner.nextInt();
 
 		while (h >= 1) {
 			System.out.println(h);
 			h -= 2;
 		}
-		
+
+		int n3 = scanner.nextInt();
+		int i = 1;
+
+		while (i <= n3) {
+			if (i % 7 == 0) {
+				System.out.println(i);
+				break;
+			}
+			i++;
+		}
+
+		int sum4 = 0;
+
+		while (true) {
+			int n4 = scanner.nextInt();
+
+			if (n4 == 0) {
+				break;
+			}
+			sum4 += n4;
+		}
+		System.out.println(sum4);
+		System.out.println("end");
+
+		int n5 = scanner.nextInt();
+
+		int result = 1;
+
+		int j = 1;
+		while (j <= n5) {
+			result *= j;
+			j++;
+		}
+		System.out.println(result);
+
+		int n6 = scanner.nextInt();
+
+		int counter = 0;
+
+		while (n6 > 0) {
+			n6 = n6 / 10;
+			counter++;
+		}
+		System.out.println(counter);
 	}
 
 }
