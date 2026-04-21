@@ -51,7 +51,7 @@ class DVD extends Item {
 	}
 }
 
-public class LibrarySystem {
+class LibrarySystem {
 	public static void main(String[] args) {
 
 		Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald");
