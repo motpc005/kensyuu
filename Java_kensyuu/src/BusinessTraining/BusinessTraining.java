@@ -20,8 +20,11 @@ public class BusinessTraining {
 	}
 
 	public void displayEmployeeInfo() {
+		System.out.println("Company: " + companyName);
+
 		for (Employee employee : employeeList) {
 			employee.displayInfo();
+
 		}
 	}
 }
