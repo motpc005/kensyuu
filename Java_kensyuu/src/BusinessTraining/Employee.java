@@ -4,7 +4,8 @@ public abstract class Employee {
 
 	private String name;
 	private String department;
-
+	
+	//Constructor
 	public Employee(String name, String department) {
 		this.name = name;
 		this.department = department;

@@ -9,7 +9,7 @@ public class HR extends Employee {
 		this.system = system;
 	}
 
-	public void employeeInterview(String name) {
+	public void employeeInterview(String name,String language) {
 
 		String result = "Sales";
 
@@ -18,6 +18,7 @@ public class HR extends Employee {
 		if (result.equals("Sales")) {
 			System.out.println("面接を行い、結果は採用だった (Sales)");
 
+			//All the lines with "new" call the constructor
 			employee = new Sales(name);
 			system.createEmployee(employee);
 

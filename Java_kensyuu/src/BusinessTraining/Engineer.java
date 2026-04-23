@@ -10,13 +10,15 @@ public class Engineer extends Employee {
 	}
 
 	public void develop() {
-		System.out.println(language + "で開発を行なった");
+		System.out.println(getLanguage() + "で開発を行なった");
 	}
 
 	@Override
 	public void displayInfo() {
-		System.out.println(getName() + " : " + getDepartment() + " 使用言語 : " + language);
+		System.out.println(getName() + " : " + getDepartment() + " 使用言語 : " + getLanguage());
 
 	}
-
+	public String getLanguage() {
+		return this.language;
+	}
 }
