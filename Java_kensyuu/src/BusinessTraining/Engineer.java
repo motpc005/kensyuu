@@ -9,6 +9,11 @@ public class Engineer extends Employee {
 		this.language = language;
 	}
 
+	public String getLanguage() {
+		return this.language;
+
+	}
+
 	public void develop() {
 		System.out.println(getLanguage() + "で開発を行なった");
 	}
@@ -18,7 +23,5 @@ public class Engineer extends Employee {
 		System.out.println(getName() + " : " + getDepartment() + " 使用言語 : " + getLanguage());
 
 	}
-	public String getLanguage() {
-		return this.language;
-	}
+
 }
