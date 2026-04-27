@@ -17,12 +17,21 @@ public class Line implements Figure {
 
 	@Override
 	public void draw() {
-		System.out.println("[線を描画] 始点(" + p1(0,0) + ")から終点(" + p2(100,100) + ")まで");
+		System.out.println("[線を描画] 始点(" 
+				+ p1.getX() + "," 
+				+ p1.getY() + ")から終点(" 
+				+ p2.getX() + "," 
+				+ p2.getY() + ")まで");
 	}
 
 	public double getPerimeter() {
-		double result = Math.sqrt(Math.pow((x2) - x1), 2) + Math.pow((y2 = y1), 2));
-		return result;
+		
+		double dx = p2.getX() - p1.getX();
+		double dy = p2.getY() - p1.getY();
+		
+		return Math.sqrt
+				(Math.pow(dx, 2) + Math.pow(dy, 2));
+		
 	}
 
 }
