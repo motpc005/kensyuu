@@ -9,15 +9,16 @@ import lombok.EqualsAndHashCode;
 
 /**
  * ユーザー情報更新リクエストデータ
- *
  */
 @Data
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 public class UserUpdateRequest extends UserRequest implements Serializable {
 
-  /**
-   * ユーザーID
-   */
-  @NotNull
-  private Long id;
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * ユーザーID
+     */
+    @NotNull
+    private Long id;
 }
